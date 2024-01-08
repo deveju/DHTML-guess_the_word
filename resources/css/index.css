@@ -1,0 +1,150 @@
+body {
+    background: linear-gradient(90deg, hsla(160, 50%, 51%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.title {
+    position: fixed;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    left: 50%;
+    font-size: 4vh;
+    top: 3.5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255,255,255,0.5);
+    text-shadow: 0.2vh 0.2vh 1vh rgb(255,255,255,0.5);
+}
+
+.banners {
+    position: fixed;
+    background-color: rgb(0,0,0,0.7);
+    height: 80vh;
+    width: 30vh;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    color: rgb(255,255,255,1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5vh;
+    border-radius: 1vh;
+}
+
+.banners p {
+    margin: 2vh;
+    text-align: justify;
+}
+
+.banner1 {
+    left: 20vh;
+}
+
+.banner2 {
+    right: -10vh;
+}
+
+.input-container {
+    position: fixed;
+    float: left;
+    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 50%;
+}
+
+.inputs {
+    height: 8vh;
+    width: 8vh;
+    font-size: 8vh;
+    float: left;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    caret-color: transparent;
+    background-color: rgb(255,255,255,0.2);
+    border: 0.3vh solid black;
+    margin: 0.2vh;
+}
+
+.inputs:focus {
+    border: 0.3vh solid red;
+    outline: none;   
+}
+
+.keys-container {
+    position: fixed;
+    bottom: 4%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    float: left;
+    width: 40%;
+}
+
+.keys {
+    height: 7vh;
+    width: 7vh;
+    font-size: 6vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 0.2vh;
+    margin-top: 0.6vh;
+    background-color: rgb(255,255,255,0.2);
+    border: 0.1vh solid black;
+}
+
+.buttons {
+    display: flex;
+    height: 7vh;
+    width: 40vh;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.clear {
+    margin-left: 1vh;
+}
+
+.submit {
+    margin-right: 1vh;
+}
+
+.button-style {
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 50%;
+    background-color: rgb(255,255,255,0.2);
+    border: 0.1vh solid black;
+    font-size: 4vh;
+}
+
+
+.answer-container {
+    display: flex;
+    position: fixed;
+    float: left;
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 50%;
+}
+
+.answer {
+    background-color: #ddd;
+    border: 0.3vh solid black;
+    margin: 0.5vh;
+}
+
+.answer .answer-input {
+    width: 8vh;
+    height: 8vh;
+    text-align: center;
+    font-size: 8vh;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 7vh;
+}

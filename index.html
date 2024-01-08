@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Word</title>
+    <link rel="icon" href="resources/images/icon.png">
+    <link rel="stylesheet" href="resources/css/index.css">
+    <script src="resources/js/script.js"></script>
+    <script src="resources/js/input.js"></script>
+    <script src="resources/js/gameLogic.js"></script>
+</head>
+<body>
+    <div class="title">Guess The Word</div>
+    <div class="banner1 banners">
+        <p>The game is simple, type a word and it will display colors to each character. <br><br><span style="color: green">▣ Green</span> means the character is in the right index of the word. <br><br><span style="color: yellow">▣ Yellow</span> means the word contains the character, but it's in a different index. <br><br><span style="color: red">▣ Red</span> means there's no such character in the word! <br><br>There are unlimited tries in this game and you can also set your own answer word!</p>
+    </div>
+    <div class="banner2 banners">
+        <p>The answer can be edited on the <span style="color: yellow">gameLogic.js</span> file inside resources/js.<br><br> The answer can also be found inspecting this page's console logs!<br><br>The SUBMIT button checks if the answer is right and displays the colors indicating right/misplaced/wrong characters.<br><br> The CLEAR button clears the word input, allowing to use the keyboard, but you can also click on each input and type the characters(I personally prefer this way).</p>
+    </div>
+    <div class="input-container">
+        <input type="text" class="inputs" id="input1" maxlength="1" onkeypress="return validate(event)" onclick="moveSelection()">
+        <input type="text" class="inputs" id="input2" maxlength="1" onkeypress="return validate(event)" onclick="moveSelection()">
+        <input type="text" class="inputs" id="input3" maxlength="1" onkeypress="return validate(event)" onclick="moveSelection()">
+        <input type="text" class="inputs" id="input4" maxlength="1" onkeypress="return validate(event)" onclick="moveSelection()">
+        <input type="text" class="inputs" id="input5" maxlength="1" onkeypress="return validate(event)" onclick="moveSelection()">
+    </div>
+    <div class="buttons">
+        <button id="submit" class="submit button-style" onclick="checkWord()">Submit</button>
+        <button id="clear" class="clear button-style" onclick="clearInput()">Clear</button>
+    </div>
+    <div class="answer-container">
+        <div class="answer" id="answer1">
+            <div class="answer-input"></div>
+        </div>
+        <div class="answer" id="answer2">
+            <div class="answer-input"></div>
+        </div>
+        <div class="answer" id="answer3">
+            <div class="answer-input"></div>
+        </div>
+        <div class="answer" id="answer4">
+            <div class="answer-input"></div>
+        </div>
+        <div class="answer" id="answer5">
+            <div class="answer-input"></div>
+        </div>
+    </div>
+    <div class="keys-container">
+        <button type="button" class="keys" onclick="addInput('A')">A</button>
+        <button type="button" class="keys" onclick="addInput('B')">B</button>
+        <button type="button" class="keys" onclick="addInput('C')">C</button>
+        <button type="button" class="keys" onclick="addInput('D')">D</button>
+        <button type="button" class="keys" onclick="addInput('E')">E</button>
+        <button type="button" class="keys" onclick="addInput('F')">F</button>
+        <button type="button" class="keys" onclick="addInput('G')">G</button>
+        <button type="button" class="keys" onclick="addInput('H')">H</button>
+        <button type="button" class="keys" onclick="addInput('I')">I</button>
+        <button type="button" class="keys" onclick="addInput('J')">J</button>
+        <button type="button" class="keys" onclick="addInput('K')">K</button>
+        <button type="button" class="keys" onclick="addInput('L')">L</button>
+        <button type="button" class="keys" onclick="addInput('M')">M</button>
+        <button type="button" class="keys" onclick="addInput('N')">N</button>
+        <button type="button" class="keys" onclick="addInput('O')">O</button>
+        <button type="button" class="keys" onclick="addInput('P')">P</button>
+        <button type="button" class="keys" onclick="addInput('Q')">Q</button>
+        <button type="button" class="keys" onclick="addInput('R')">R</button>
+        <button type="button" class="keys" onclick="addInput('S')">S</button>
+        <button type="button" class="keys" onclick="addInput('T')">T</button>
+        <button type="button" class="keys" onclick="addInput('U')">U</button>
+        <button type="button" class="keys" onclick="addInput('V')">V</button>
+        <button type="button" class="keys" onclick="addInput('W')">W</button>
+        <button type="button" class="keys" onclick="addInput('X')">X</button>
+        <button type="button" class="keys" onclick="addInput('Y')">Y</button>
+        <button type="button" class="keys" onclick="addInput('Z')">Z</button>
+    </div>
+</body>
+</html>
